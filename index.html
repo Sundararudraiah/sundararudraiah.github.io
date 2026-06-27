@@ -176,7 +176,10 @@
     .toc-chapter[open] summary .tc-arrow { transform: rotate(90deg); }
     .toc-chapter .tc-body { padding: 4px 20px 18px 64px; }
     .toc-cs { font-size: 13.5px; color: var(--amber); font-style: italic; margin: 6px 0; }
-    .toc-sub { font-size: 14.5px; color: var(--muted); margin: 5px 0; line-height: 1.6; }
+    .toc-sub { list-style: none; margin: 6px 0 0; padding: 0; }
+    .toc-sub li { font-size: 14.5px; color: var(--muted); line-height: 1.6; margin-bottom: 6px; padding-left: 16px; position: relative; }
+    .toc-sub li::before { content: "·"; position: absolute; left: 0; color: var(--amber); font-weight: 700; }
+    .toc-sub li:last-child { margin-bottom: 0; }
     .toc-end { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
     .toc-end-pill { background: var(--teal-dk); color: #fff; font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius: 50px; }
 
@@ -194,6 +197,7 @@
     /* ENDORSEMENTS */
     #endorsements { background: linear-gradient(160deg, var(--teal-dk), #264a3a); color: var(--white); text-align: center; }
     #endorsements h2 { font-size: clamp(22px,4vw,34px); margin-bottom: 48px; }
+    #endorsements .hl-sub { color: rgba(255,255,255,.88); }
     .endorse-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
     .endorse-card { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: var(--r); padding: 28px 30px; max-width: 380px; text-align: left; transition: background .2s; }
     .endorse-card:hover { background: rgba(255,255,255,.13); }
@@ -575,7 +579,13 @@
       <div class="tc-body">
         <p class="toc-cs">Case Study 1: Catching the Signs Early — Ravi's Story</p>
         <p class="toc-cs">Case Study 2: Different Dementia Types, Different Presentations</p>
-        <p class="toc-sub">1.1 Types of Dementia · 1.2 Causes and Risk Factors · 1.3 Early Signs &amp; Symptoms · 1.4 Difference Between Dementia and Normal Aging · 1.5 How Is It Diagnosed?</p>
+        <ul class="toc-sub">
+        <li>1.1 Types of Dementia</li>
+        <li>1.2 Causes and Risk Factors</li>
+        <li>1.3 Early Signs &amp; Symptoms</li>
+        <li>1.4 Difference Between Dementia and Normal Aging</li>
+        <li>1.5 How Is It Diagnosed?</li>
+        </ul>
       </div>
     </details>
 
@@ -585,7 +595,12 @@
         <p class="toc-cs">Case Study 3: Navigating the Dawn of Change (Mr. Shankar)</p>
         <p class="toc-cs">Case Study 4: Mrs. Fatima's Quiet Strength</p>
         <p class="toc-cs">Case Study 5: Mr. George's Peaceful Final Chapter</p>
-        <p class="toc-sub">2.1 Life After Diagnosis: What to Expect · 2.2 Stages of Dementia: Early, Middle, Late — and beyond · 2.3 Emotional Impact on Patients · 2.4 Coping with Diagnosis: Tips for Families</p>
+        <ul class="toc-sub">
+        <li>2.1 Life After Diagnosis: What to Expect</li>
+        <li>2.2 Stages of Dementia: Early, Middle, Late — and beyond</li>
+        <li>2.3 Emotional Impact on Patients</li>
+        <li>2.4 Coping with Diagnosis: Tips for Families</li>
+        </ul>
       </div>
     </details>
 
@@ -595,7 +610,12 @@
         <p class="toc-cs">Case Study 6: The Diagnostic Team in Action – Mrs. Latha's Turning Point</p>
         <p class="toc-cs">Case Study 7: Reclaiming Daily Life – Mr. Shah and the Helping Hands</p>
         <p class="toc-cs">Case Study 8: A Touch of Care: Mrs. Joshi's Journey Beyond Medical Treatment</p>
-        <p class="toc-sub">3.1 When to See a Doctor · 3.2 Cognitive Testing &amp; Brain Scans · 3.3 Medication: What Helps and What Doesn't · 3.4 Finding a Specialist: Neurologists, Psychiatrists, Geriatricians</p>
+        <ul class="toc-sub">
+        <li>3.1 When to See a Doctor</li>
+        <li>3.2 Cognitive Testing &amp; Brain Scans</li>
+        <li>3.3 Medication: What Helps and What Doesn't</li>
+        <li>3.4 Finding a Specialist: Neurologists, Psychiatrists, Geriatricians</li>
+        </ul>
       </div>
     </details>
 
@@ -603,7 +623,15 @@
       <summary><span class="tc-num">Ch 4</span><span>How to Communicate with Doctors Effectively</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
         <p class="toc-cs">Case Study 9: When Mala's Silence Turned into Strength at the Hospital</p>
-        <p class="toc-sub">4.1 Introduction: Your Voice Matters in Dementia Care · 4.2 What Information to Share with the Doctor · 4.3 During the Appointment: Being Confident and Clear · 4.4 Communicating Between Appointments · 4.5 Communicating with Different Specialists · 4.6 Navigating Care in India · 4.7 After the Appointment: Implementing the Plan</p>
+        <ul class="toc-sub">
+        <li>4.1 Introduction: Your Voice Matters in Dementia Care</li>
+        <li>4.2 What Information to Share with the Doctor</li>
+        <li>4.3 During the Appointment: Being Confident and Clear</li>
+        <li>4.4 Communicating Between Appointments</li>
+        <li>4.5 Communicating with Different Specialists</li>
+        <li>4.6 Navigating Care in India</li>
+        <li>4.7 After the Appointment: Implementing the Plan</li>
+        </ul>
       </div>
     </details>
 
@@ -612,7 +640,13 @@
       <div class="tc-body">
         <p class="toc-cs">Case Study 10: When Words Fade, Love Speaks – Mrs. Seema's Silent Bond</p>
         <p class="toc-cs">Case Study 11: Calming the Nights – Mr. Anand's Peaceful Sleep</p>
-        <p class="toc-sub">5.1 Communicating with Someone with Dementia · 5.2 Daily Routines That Help · 5.3 Responding to Mood Changes, Confusion, and Aggression · 5.4 Supporting Health Through Nutrition and Gentle Activity · 5.5 Hygiene and Safety at Home</p>
+        <ul class="toc-sub">
+        <li>5.1 Communicating with Someone with Dementia</li>
+        <li>5.2 Daily Routines That Help</li>
+        <li>5.3 Responding to Mood Changes, Confusion, and Aggression</li>
+        <li>5.4 Supporting Health Through Nutrition and Gentle Activity</li>
+        <li>5.5 Hygiene and Safety at Home</li>
+        </ul>
       </div>
     </details>
 
@@ -621,7 +655,13 @@
       <div class="tc-body">
         <p class="toc-cs">Case Study 12: Balancing Modern Life and Old Duties — Anjali's Journey as a Daughter and Professional</p>
         <p class="toc-cs">Case Study 13: A Gentle Shift — Mr. Rao's Family Accepts Help with Grace</p>
-        <p class="toc-sub">6.1 Role of Family Caregivers in India · 6.2 Emotional Burnout &amp; How to Prevent It · 6.3 Sharing Responsibilities Among Siblings · 6.4 Managing Care Alongside Work Life · 6.5 Caring for a Parent with Dementia</p>
+        <ul class="toc-sub">
+        <li>6.1 Role of Family Caregivers in India</li>
+        <li>6.2 Emotional Burnout &amp; How to Prevent It</li>
+        <li>6.3 Sharing Responsibilities Among Siblings</li>
+        <li>6.4 Managing Care Alongside Work Life</li>
+        <li>6.5 Caring for a Parent with Dementia</li>
+        </ul>
       </div>
     </details>
 
@@ -630,7 +670,14 @@
       <div class="tc-body">
         <p class="toc-cs">Case Study 14: Mr. Menon's Story of Law and Respect</p>
         <p class="toc-cs">Case Study 15: A Circle of Compassion — Mrs. Ayesha Finds Her Way Back</p>
-        <p class="toc-sub">7.1 Understanding and Combating Stigma Around Dementia in India · 7.2 Legal Tools Every Family Should Know · 7.3 Planning Ahead: Money Matters &amp; Government Support · 7.4 Government Schemes &amp; Concessions for Senior Citizens and Families · 7.5 Where to Find Help &amp; Build Awareness · 7.6 Recognising and Preventing Elder Abuse in Dementia Care</p>
+        <ul class="toc-sub">
+        <li>7.1 Understanding and Combating Stigma Around Dementia in India</li>
+        <li>7.2 Legal Tools Every Family Should Know</li>
+        <li>7.3 Planning Ahead: Money Matters &amp; Government Support</li>
+        <li>7.4 Government Schemes &amp; Concessions for Senior Citizens and Families</li>
+        <li>7.5 Where to Find Help &amp; Build Awareness</li>
+        <li>7.6 Recognising and Preventing Elder Abuse in Dementia Care</li>
+        </ul>
       </div>
     </details>
 
@@ -639,7 +686,13 @@
       <div class="tc-body">
         <p class="toc-cs">Case Study 16: Understanding Beyond Tradition — Mr. Kumar's Path to Clarity</p>
         <p class="toc-cs">Case Study 17: Music, Rituals, and Memory — Mrs. Shanti's Silent Connection</p>
-        <p class="toc-sub">8.1 Traditional Indian Attitudes Towards Aging · 8.2 The Burden of Care: Women at the Forefront · 8.3 Using Music, Bhajans, and Rituals for Mental Calm · 8.4 Role of Religion and Spirituality in Dementia Care · 8.5 Rural vs Urban Challenges</p>
+        <ul class="toc-sub">
+        <li>8.1 Traditional Indian Attitudes Towards Aging</li>
+        <li>8.2 The Burden of Care: Women at the Forefront</li>
+        <li>8.3 Using Music, Bhajans, and Rituals for Mental Calm</li>
+        <li>8.4 Role of Religion and Spirituality in Dementia Care</li>
+        <li>8.5 Rural vs Urban Challenges</li>
+        </ul>
       </div>
     </details>
 
@@ -649,14 +702,26 @@
         <p class="toc-cs">Case Study 18: Finding Calm in a Song — Mr. D'Souza's Afternoon Peace</p>
         <p class="toc-cs">Case Study 19: Healing on Foot — Mrs. Suman's Walk-back to Herself</p>
         <p class="toc-cs">Case Study 20: Breath by Breath – How Yoga Helped Mr. Raja Reconnect</p>
-        <p class="toc-sub">9.1 Ayurveda and Dementia: What Science Says · 9.2 Yoga and Meditation Benefits · 9.3 Brain Exercises &amp; Activities</p>
+        <ul class="toc-sub">
+        <li>9.1 Ayurveda and Dementia: What Science Says</li>
+        <li>9.2 Yoga and Meditation Benefits</li>
+        <li>9.3 Brain Exercises &amp; Activities</li>
+        </ul>
       </div>
     </details>
 
     <details class="toc-chapter fade-in">
       <summary><span class="tc-num">Ch 10</span><span>Simple Brain Exercises for a Healthy Mind and Memory</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
-        <p class="toc-sub">10.1 Introduction: A Helping Hand for the Mind · 10.2 Why the Brain Needs Daily Exercise · 10.3 What Science Tells Us · 10.4 Getting Started: Safety and Personal Touch are Key · 10.5 Part A: For Urban Homes — Using City Life &amp; Technology · 10.6 Part B: For Rural &amp; Low-Tech Homes — Simple, Powerful Activities · 10.7 When to Seek Professional Help</p>
+        <ul class="toc-sub">
+        <li>10.1 Introduction: A Helping Hand for the Mind</li>
+        <li>10.2 Why the Brain Needs Daily Exercise</li>
+        <li>10.3 What Science Tells Us</li>
+        <li>10.4 Getting Started: Safety and Personal Touch are Key</li>
+        <li>10.5 Part A: For Urban Homes — Using City Life &amp; Technology</li>
+        <li>10.6 Part B: For Rural &amp; Low-Tech Homes — Simple, Powerful Activities</li>
+        <li>10.7 When to Seek Professional Help</li>
+        </ul>
       </div>
     </details>
 
@@ -666,7 +731,12 @@
         <p class="toc-cs">Case Study 21: Love in Letting Go – Mr. Ramesh's Final Journey at Home</p>
         <p class="toc-cs">Case Study 22: Respecting Her Spirit – Mrs. Radha and Her Rasam Pot</p>
         <p class="toc-cs">Case Study 23: After the Silence – Mrs. Meena's Emotional Struggle</p>
-        <p class="toc-sub">11.1 Palliative Care in Dementia · 11.2 Dying with Dignity: Indian Perspective · 11.3 Talking About Death with Family · 11.4 Grief and Healing for Caregivers</p>
+        <ul class="toc-sub">
+        <li>11.1 Palliative Care in Dementia</li>
+        <li>11.2 Dying with Dignity: Indian Perspective</li>
+        <li>11.3 Talking About Death with Family</li>
+        <li>11.4 Grief and Healing for Caregivers</li>
+        </ul>
       </div>
     </details>
 
@@ -676,21 +746,43 @@
       <summary><span class="tc-num">Ch 12</span><span>Stories, Hope &amp; Resources</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
         <p class="toc-cs">Case Study 24: A Circle of Strength – Ms. Leela Finds Her People</p>
-        <p class="toc-sub">12.1 Real-Life Stories from Indian Families · 12.2 How People Cope and Heal · 12.3 Directory: Helplines, NGOs, Clinics, and Websites · 12.4 Tips for Starting Support Groups in Your City · 12.5 Work with Your Local ASHA Worker · 12.6 Connect with NGOs for Support</p>
+        <ul class="toc-sub">
+        <li>12.1 Real-Life Stories from Indian Families</li>
+        <li>12.2 How People Cope and Heal</li>
+        <li>12.3 Directory: Helplines, NGOs, Clinics, and Websites</li>
+        <li>12.4 Tips for Starting Support Groups in Your City</li>
+        <li>12.5 Work with Your Local ASHA Worker</li>
+        <li>12.6 Connect with NGOs for Support</li>
+        </ul>
       </div>
     </details>
 
     <details class="toc-chapter fade-in">
       <summary><span class="tc-num">Ch 13</span><span>Learning from Japan, South Korea, and Europe</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
-        <p class="toc-sub">13.1 Why These Regions Face High Dementia Rates · 13.2 Lessons from Japan: Community-based Support and a National Strategy · 13.3 South Korea: Infrastructure, Innovation, and Caregiver Relief · 13.4 Europe: National Plans and Dementia-friendly Communities · 13.5 Seva and Stigma: The Indian Cultural Paradox · 13.6 Technology in Dementia Care: Affordable, Inclusive Innovation · 13.7 An Action Plan for India · 13.8 Global Dementia Care Strategies: A Country-wise Comparative Analysis · 13.9 India's Path Forward: Adapting, Not Copying</p>
+        <ul class="toc-sub">
+        <li>13.1 Why These Regions Face High Dementia Rates</li>
+        <li>13.2 Lessons from Japan: Community-based Support and a National Strategy</li>
+        <li>13.3 South Korea: Infrastructure, Innovation, and Caregiver Relief</li>
+        <li>13.4 Europe: National Plans and Dementia-friendly Communities</li>
+        <li>13.5 Seva and Stigma: The Indian Cultural Paradox</li>
+        <li>13.6 Technology in Dementia Care: Affordable, Inclusive Innovation</li>
+        <li>13.7 An Action Plan for India</li>
+        <li>13.8 Global Dementia Care Strategies: A Country-wise Comparative Analysis</li>
+        <li>13.9 India's Path Forward: Adapting, Not Copying</li>
+        </ul>
       </div>
     </details>
 
     <details class="toc-chapter fade-in">
       <summary><span class="tc-num">Ch 14</span><span>Ayurveda and Holistic Healing</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
-        <p class="toc-sub">14.1 The Ayurvedic Understanding of Memory &amp; Mind · 14.2 Ayurvedic Diet for Mind &amp; Memory · 14.3 Combining Ayurveda with Modern Care: A Balanced Path · 14.4 Ayurvedic Memory Support — Quick Reference Table for Caregivers</p>
+        <ul class="toc-sub">
+        <li>14.1 The Ayurvedic Understanding of Memory &amp; Mind</li>
+        <li>14.2 Ayurvedic Diet for Mind &amp; Memory</li>
+        <li>14.3 Combining Ayurveda with Modern Care: A Balanced Path</li>
+        <li>14.4 Ayurvedic Memory Support — Quick Reference Table for Caregivers</li>
+        </ul>
       </div>
     </details>
 
@@ -699,14 +791,28 @@
     <details class="toc-chapter fade-in">
       <summary><span class="tc-num">Ch 15</span><span>Protect Your Brain: A Message for Young Indians</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
-        <p class="toc-sub">15.1 Start Early: Protect Your Brain Now, Not Later · 15.2 Dear Young Friend: Your Brain's Future Starts Today · 15.3 The Bigger Picture: Your Role in India's Dementia Battle · 15.4 Digital Hygiene &amp; Brain Health · 15.5 Brain Health and Career Success · 15.6 Your 30-Day Brain Health Challenge</p>
+        <ul class="toc-sub">
+        <li>15.1 Start Early: Protect Your Brain Now, Not Later</li>
+        <li>15.2 Dear Young Friend: Your Brain's Future Starts Today</li>
+        <li>15.3 The Bigger Picture: Your Role in India's Dementia Battle</li>
+        <li>15.4 Digital Hygiene &amp; Brain Health</li>
+        <li>15.5 Brain Health and Career Success</li>
+        <li>15.6 Your 30-Day Brain Health Challenge</li>
+        </ul>
       </div>
     </details>
 
     <details class="toc-chapter fade-in">
       <summary><span class="tc-num">Ch 16</span><span>The Search for a Cure: Hope, Realism, and Action</span><span class="tc-arrow">▸</span></summary>
       <div class="tc-body">
-        <p class="toc-sub">16.1 A New Era in Treatment: The Anti-Amyloid Breakthroughs · 16.2 The Diagnostic Revolution: A Simple Blood Test for Alzheimer's · 16.3 India's Growing Role in the Global Fight · 16.4 From Knowledge to Action · 16.5 Our Timeless Wisdom Meets New Medical Hope · 16.6 Conclusion: Hope, Action, and the Power of Seva</p>
+        <ul class="toc-sub">
+        <li>16.1 A New Era in Treatment: The Anti-Amyloid Breakthroughs</li>
+        <li>16.2 The Diagnostic Revolution: A Simple Blood Test for Alzheimer's</li>
+        <li>16.3 India's Growing Role in the Global Fight</li>
+        <li>16.4 From Knowledge to Action</li>
+        <li>16.5 Our Timeless Wisdom Meets New Medical Hope</li>
+        <li>16.6 Conclusion: Hope, Action, and the Power of Seva</li>
+        </ul>
       </div>
     </details>
 
@@ -792,7 +898,7 @@
 <footer>
   <p class="f-title">Understanding Dementia: A Guide for Indian Families and Caregivers</p>
   <p>By Sundara Rudraiah &nbsp;·&nbsp; <a href="mailto:bangsundara@gmail.com">bangsundara@gmail.com</a> &nbsp;·&nbsp; <a href="https://sundararudraiah.github.io/" target="_blank">sundararudraiah.github.io</a></p>
-  <p style="margin-top:8px;">© 2024 Sundara Rudraiah. All rights reserved. &nbsp;|&nbsp; For medical queries, please consult a qualified physician.</p>
+  <p style="margin-top:8px;">© 2026 Sundara Rudraiah. All rights reserved. &nbsp;|&nbsp; For medical queries, please consult a qualified physician.</p>
 </footer>
 
 <script>
